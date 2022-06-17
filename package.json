@@ -1,0 +1,21 @@
+{
+  "name": "@kassahq/tailwindcss",
+  "version": "1.0.0",
+  "description": "Kassa's custom Tailwind CSS configuration for styling apps and websites.",
+  "author": {
+    "name": "Edwin Kys",
+    "email": "edwin@joinkassa.com"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Warning: There is no test specified.\""
+  },
+  "peerDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.3"
+  }
+}
