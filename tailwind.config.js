@@ -32,6 +32,7 @@ module.exports = {
       base: "0",
     },
     spacing: {
+      none: "0",
       xs: "0.5rem",
       sm: "0.75rem",
       md: "1.5rem",
