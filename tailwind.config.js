@@ -33,7 +33,6 @@ module.exports = {
     },
     spacing: {
       none: "0",
-      auto: "auto",
       xs: "0.5rem",
       sm: "0.75rem",
       md: "1.5rem",
