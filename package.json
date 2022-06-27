@@ -1,6 +1,6 @@
 {
   "name": "@kassahq/tailwindcss",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "Kassa's custom Tailwind CSS configuration for styling apps and websites.",
   "author": {
     "name": "Edwin Kys",
