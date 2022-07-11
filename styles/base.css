@@ -1,0 +1,100 @@
+@tailwind base;
+
+@layer base {
+  body {
+    font-size: 16px !important;
+
+    @apply font-sans text-base;
+    @apply text-gray-dark bg-white;
+    @apply scroll-smooth touch-manipulation;
+
+    /* Global Utilities */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* ########################################
+
+  Heading and Paragraph
+
+  ######################################## */
+
+  h1,
+  h2,
+  h3 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-xxl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+  small {
+    @apply text-sm;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  small {
+    @apply mb-md last:mb-none;
+  }
+
+  /* ########################################
+
+  Button, Input, and Link
+
+  ######################################## */
+
+  a {
+    @apply text-primary cursor-pointer;
+  }
+
+  a:hover {
+    @apply text-secondary;
+  }
+
+  label {
+    @apply transition duration-500;
+  }
+
+  a,
+  button,
+  input,
+  textarea {
+    @apply outline-none;
+    @apply transition duration-500;
+  }
+
+  textarea {
+    @apply overflow-auto;
+  }
+
+  /* ########################################
+
+  Section
+
+  ######################################## */
+
+  section {
+    @apply py-xl;
+  }
+
+  /* ########################################
+
+  Placeholder
+
+  ######################################## */
+
+  ::placeholder {
+    @apply text-gray-medium;
+  }
+}
