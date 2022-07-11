@@ -32,13 +32,26 @@ module.exports = require("@kassahq/tailwindcss/postcss.config");
 
 ### CSS Configuration
 
-After we complete the configuration process, we need to add the line below in the primary CSS file that we use in our project, `index.css` or equivalent.
+Additionally, we have setup the `@layer base` directive separately in `styles/base.css`. We can use this to maintain branding consistency throughout our applications and websites. To use it, follow the guide below.
+
+In `index.js` file or equivalent, import the `base.css` file on the very top to make sure there is no style overriding issue.
+
+```js
+// Import this first.
+import "@kassahq/tailwindcss/styles/base.css";
+
+// Import other styling below this.
+import "./index.css";
+```
+
+In `index.css` file or equivalent, the primary stylesheet for the application, add these Tailwind CSS directives:
 
 ```css
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
+
+We don't include `@tailwind base` since Tailwind CSS `base` directive is already added by `base.css` file from this package.
 
 We are all set!
 
