@@ -41,3 +41,18 @@ After we complete the configuration process, we need to add the line below in th
 ```
 
 We are all set!
+
+## Package Publishing
+
+To publish this module as a Node package in NPM, we can use `np` package. NP is a package that helps us deal with publishing a node package. For more information about the package, please refer to [NP](https://www.npmjs.com/package/np).
+
+After installing and setting up the package in our device according to the documentation, we can simply run the command below in the terminal from the root of our project:
+
+```sh
+# Run NP interactive UI and publish package to NPM without 2FA.
+np --no-2fa
+```
+
+This command will run `np` interactive package publisher without 2-factor authentication (might lead to error if NPM account's 2FA is not set up).
+
+We then can follow the interactive UI and answer some questions according to what have been changed in the latest version. The package should be published in NPM and a tag with the latest version of the package should be created on GitHub.
